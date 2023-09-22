@@ -1,0 +1,93 @@
+:root {
+    --light: #fff;
+    --dark: #333;
+    --bg-color:var(--dark);
+    --primary: yellow;
+    --border-color:var(--light);
+    --alt-text: aquamarine;
+    --primary-text:var(--light);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+* {
+    text-align: center;
+}
+
+figure {
+    display: flex;
+    border: 1px dashed var(--border-color);
+    position: relative;
+}
+
+header p {
+    color: var(--light);
+}
+
+.card h2 {
+    display: flex;
+    border: 1px solid var(--border-color);
+    align-self: center;
+    margin-top: -5%;
+
+}
+
+h1, h2 {
+    color:var(--primary);
+    margin: 0;
+}
+
+p {
+    color: var(--light);
+    margin-top: 40px;
+    color: var(--primary);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1%;
+    position: relative;
+    max-width: 400px;
+    min-width: 350px;
+}
+
+figure h2 {
+    background-color: var(--bg-color);
+    border: var(--border-color);
+    border-radius: 5px;
+    padding: 1%;
+    position: absolute;
+}
+
+.card pre {
+    display: block;
+    color: var(--light);
+    border: 1px solid var(--light);
+    border-radius: 10px;
+    max-width: 400px;
+    min-width: 350px;
+    text-wrap: wrap;
+    text-align: left;
+}
+
+.card:hover {
+    box-shadow: inset 0px 0px 10px
+    red, 0 0 30px black;
+}
+
+.linear-grad {
+        background-image: linear-gradient(
+            red 0%,
+            blue 100%
+        );
+    }
